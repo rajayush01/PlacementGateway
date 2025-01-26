@@ -56,7 +56,7 @@ const mockDataService = {
   })
 };
 
-const StudentDashboard = () => {
+const DashboardStudentLogin = () => {
   const [studentData, setStudentData] = useState(null);
   const [activeTab, setActiveTab] = useState('dashboard');
   const [activeQuickAction, setActiveQuickAction] = useState(null);
@@ -371,4 +371,4 @@ const StudentDashboard = () => {
   );
 };
 
-export default StudentDashboard;
+export default DashboardStudentLogin;
