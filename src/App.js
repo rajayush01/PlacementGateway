@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
 import { Navbar } from "./Components/Navbar";
-import DashboardStudent_Login from "./Pages/DashboardStudent/DashboardStudentLogin";
-import DashboardStudent_Signup from "./Pages/DashboardStudent/DashboardStudentSignup";
-import DashboardRecruiter_Login from "./Pages/DashboardRecruiter/DashboardRecruiter";
 import ApplicationsSection from "./Components/Student/ApplicationsSection";
 import ProfileSection from "./Components/Student/ProfileSection";
 import ManageResume from "./Components/Student/ManageResume";
@@ -13,6 +10,9 @@ import InterviewPrep from "./Components/Student/InterviewPrep";
 import Deadlines from "./Components/Student/Deadline";
 import { Landing } from "./Pages/Landing/Landing";
 import AdminDashboard from "./Pages/DashboardAdmin/DashboardAdmin";
+import DashboardStudentSignup from "./Pages/DashboardStudent/DashboardStudentSignup";
+import DashboardRecruiterLogin from "./Pages/DashboardRecruiter/DashboardRecruiter";
+import DashboardStudentLogin from "./Pages/DashboardStudent/DashboardStudentLogin";
 
 const App = () => {
   return (
@@ -23,11 +23,11 @@ const App = () => {
         <Route path="/navbar" element={<Navbar />} />
         
         {/* Student Routes */}
-        <Route path="/student" element={<DashboardStudent_Login />} />
-        <Route path="/student-form" element={<DashboardStudent_Signup />} />
+        <Route path="/student" element={<DashboardStudentLogin />} />
+        <Route path="/student-form" element={<DashboardStudentSignup />} />
         
         {/* Recruiter Routes */}
-        <Route path="/recruiter" element={<DashboardRecruiter_Login />} />
+        <Route path="/recruiter" element={<DashboardRecruiterLogin />} />
         
         {/* Default Route */}
         <Route path="/" element={<Landing />} />
